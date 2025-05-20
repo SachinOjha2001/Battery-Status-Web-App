@@ -1,0 +1,56 @@
+
+    body {
+      background-color: #76baf6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .battery-card {
+      max-width: 400px;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 1rem;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .battery-level {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .charging-label {
+      font-size: 1.2rem;
+      color: green;
+      animation: pulse 1s infinite;
+      text-shadow: 0 0 8px limegreen;
+    }
+
+    .not-charging-label {
+      font-size: 1.2rem;
+      color: red;
+      animation: none;
+      text-shadow:  0 0 8px rgb(246, 2, 153);
+    }
+
+    .progress {
+      height: 25px;
+      margin-top: 1rem;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      50% {
+        transform: scale(1.1);
+        opacity: 0.7;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+ 
